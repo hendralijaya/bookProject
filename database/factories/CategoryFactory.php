@@ -18,12 +18,30 @@ class CategoryFactory extends Factory
         ];
     }
 
-    public function staticCategory()
+    public function staticCategoryProgramming()
     {
         return $this->state( function (array $attributes)
         {
            return [
                 'name' => 'Programming'
+           ];
+        });
+    }
+    public function staticCategoryPersonal()
+    {
+        return $this->state( function (array $attributes)
+        {
+           return [
+                'name' => 'Personal'
+           ];
+        });
+    }
+    public function staticCategoryNetworking()
+    {
+        return $this->state( function (array $attributes)
+        {
+           return [
+                'name' => 'Networking'
            ];
         });
     }

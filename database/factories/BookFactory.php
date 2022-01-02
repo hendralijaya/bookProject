@@ -20,7 +20,8 @@ class BookFactory extends Factory
             'synopsis' => $this->faker->paragraphs(3,true),
             'publication_year' => $this->faker->year(),
             'number_of_pages' => $this->faker->numberBetween(200,500),
-            'category_id' => $this->faker->mt_rand(1,3)
+            'category_id' => $this->faker->numberBetween(1,3),
+            'user_id' => $this->faker->numberBetween(1,3)
         ];
     }
 }

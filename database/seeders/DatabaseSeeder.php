@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,5 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         // $category = Category::factory()->staticCategory()->create();
+        $this->call([
+            UserSeeder::class,
+            CategorySeeder::class,
+            BookSeeder::class
+        ]);
     }
 }
